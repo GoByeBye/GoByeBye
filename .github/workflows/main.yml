@@ -12,11 +12,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Your GitHub token
-          token: ${{ secrets.METRICS_TOKEN }}
-
-          # Options
-          user: GoByeBye
           template: terminal
-          filename: github-metrics.svg
+          filename: metrics.terminal.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           base: header, metadata
